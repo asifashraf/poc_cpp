@@ -1,3 +1,24 @@
+Start with `start.bat`
+, Start interactive with `it.bat`
+, Then run `source src.sh`
+, then use `cl` Alias to `clang++ -std=c++20`
+
+This is how you use it.
+
+```bash
+# Compile
+cl GeneralNumber.cpp
+# Run executable
+./a.out  
+```
+
+How to run
+
+```bash
+clang++ -std=c++20
+```
+
+
 # C++20 Fundamentals LiveLessons Code Examples
 Source code examples for our **C++20 Fundamentals LiveLessons** Videos.
 
