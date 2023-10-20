@@ -1,0 +1,7 @@
+version: '3'
+services:
+  clang:
+    image: teeks99/clang-ubuntu:16
+    volumes:
+      - .:/usr/src
+    command: tail -f /dev/null

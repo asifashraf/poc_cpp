@@ -1,0 +1,1 @@
+docker-compose -p clang_fund up -d
