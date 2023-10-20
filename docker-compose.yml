@@ -1,6 +1,8 @@
 version: '3'
 services:
   clang:
+    container_name: cppfund
+    working_dir: /usr/src
     image: teeks99/clang-ubuntu:16
     volumes:
       - .:/usr/src

@@ -1,1 +1,1 @@
-docker run --rm -it -v "%CD%":/usr/src teeks99/clang-ubuntu:16
+docker exec -it cppfund /bin/bash
