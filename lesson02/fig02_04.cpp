@@ -5,7 +5,7 @@
 // function main begins program execution
 int main() {
    // declaring and initializing variables
-   int number1{0}; // first integer to add (initialized to 0)  
+   int number1{100}; // first integer to add (initialized to 100)
    int number2{0}; // second integer to add (initialized to 0) 
    int sum{0}; // sum of number1 and number2 (initialized to 0)
 

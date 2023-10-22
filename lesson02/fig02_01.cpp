@@ -1,25 +1,14 @@
-// fig02_01.cpp
-// Text-printing program.
 #include <iostream> // enables program to output data to the screen
 
 // function main begins program execution
-int main() {
+int main()
+{
    std::cout << "Welcome to C++!\n"; // display message
-   
+
    return 0; // indicate that program ended successfully
 } // end function main
 
-
-
-
-
-
-
-
-
-
-
- /*************************************************************************
+/*************************************************************************
  * (C) Copyright 1992-2023 by Deitel & Associates, Inc. and               *
  * Pearson Education, Inc. All Rights Reserved.                           *
  *                                                                        *

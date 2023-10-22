@@ -1,33 +1,65 @@
+# Compiler params
+
+- `-std=c++20`
+- `-stdlib=libc++`
+- `-fexperimental-library`
+- `-std=c++20 -I "libraries\BigNumber" -I "libraries\cereal-1.3.0\include" -I "libraries\fmt\include" -I "libraries\GSL\include" -I "libraries/multiprecision-Boost_1_81_0/include" -I "libraries\rapidcsv"`
+
+# Libraries
+
+```
+-std=c++20 -I "libraries\BigNumber" -I "libraries\cereal-1.3.0\include" -I "libraries\fmt\include" -I "libraries\GSL\include" -I "libraries/multiprecision-Boost_1_81_0/include" -I "libraries\rapidcsv"
+```
+
+
+
+# Docker setup 
 Start with `start.bat`
 , Start interactive with `it.bat`
 , Then run `source src.sh`
-, then use `cl` Alias to `clang++ -std=c++20`
+
+
+cl is alias to : `clang++ -std=c++20 -stdlib=libc++ -fexperimental-library -I ../libraries/multiprecision-Boost_1_81_0/include` 
 
 This is how you use it.
 
 ```bash
+
 # Compile
 cl GeneralNumber.cpp
 # Run executable
 ./a.out  
+
+# Compile, custom output file name
+cl GeneralNumber.cpp -o run
+
+
 ```
+
 
 How to run
 
 ```bash
+
 clang++ -std=c++20
+
 ```
 
+## VS Include Lib
+project -> props -> c/c++ -> general -> additional include dirs
 
-# C++20 Fundamentals LiveLessons Code Examples
-Source code examples for our **C++20 Fundamentals LiveLessons** Videos.
 
-At the moment, these videos are available only to O'Reilly Online Learning subscribers. For all our books, LiveLessons videos and Full Throttle live webinars on O'Reilly Online Learning, visit: https://deitel.com/LearnWithDeitel
 
-These source-code files are (C) Copyright 2021 by Deitel & Associates, Inc. and Pearson Education, Inc. All Rights Reserved.
+## clion config -> compiler options
 
-You may use these files for your personal purposes, but please do not repost them without our express written consent.
+Working directory is repo root
 
-If you have any questions, open an issue in the Issues tab or email us: deitel at deitel dot com.
+-std=c++20 -I "libraries\fmt\include" -I "libraries/multiprecision-Boost_1_81_0/include"
 
-The authors and publisher of this video product have used their best efforts in preparing these videos. These efforts include the development, research, and testing of the theories and programs to determine their effectiveness. The authors and publisher make no warranty of any kind, expressed or implied, with regard to these programs or to the documentation contained in these videos. The authors and publisher shall not be liable in any event for incidental or consequential damages in connection with, or arising out of, the furnishing, performance, or use of these programs.
+then it will look like  
+
+
+g++.exe C:\git\poc_cpp\lesson03\fig03_05.cpp -std=c++20 -I C:\git\poc_cpp\libraries\multiprecision-Boost_1_81_0\include -o fig03_05 -g2
+
+
+

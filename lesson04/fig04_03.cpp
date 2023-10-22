@@ -12,7 +12,7 @@ int main() {
       total += number;                             
    }
 
-   cout << format("Sum is {}\n", total);
+   cout << format("Sum is {}\n and another value {}", total, 99);
 } 
 
 

@@ -1,13 +1,11 @@
 // fig02_03.cpp
 // Displayings multiple lines of text with a single statement.
 #include <iostream> // enables program to output data to the screen
-
+#include <iostream>
 // function main begins program execution
-int main() {
-   std::cout << "Welcome\nto\n\nC++!\n";
-} // end function main
-
-
+int main(){
+    std::cout << "hello \n guys";
+};
 
 /**************************************************************************
  * (C) Copyright 1992-2023 by Deitel & Associates, Inc. and               *
