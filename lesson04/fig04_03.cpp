@@ -1,7 +1,8 @@
 // fig04_03.cpp
 // Summing integers with the for statement; introducing text formatting.
-#include <format> 
+
 #include <iostream>
+#include <format>
 using namespace std;
 
 int main() {
